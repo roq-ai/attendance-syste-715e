@@ -1,0 +1,10 @@
+const mapping: Record<string, string> = {
+  attendances: 'attendance',
+  companies: 'company',
+  employees: 'employee',
+  users: 'user',
+};
+
+export function convertRouteToEntityUtil(route: string) {
+  return mapping[route] || route;
+}
